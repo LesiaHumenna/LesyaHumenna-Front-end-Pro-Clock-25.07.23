@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/m.css" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="clock">
+        <div class="clock-hour"></div>
+        <div class="clock-min"></div>
+        <div class="clock-sec"></div>
+      </div>
+    </div>
+    <div id="setTime" data-time="2023-20-23T16:25"></div>
+    <input type="datetime-local" id="meeting-time" />
+    <div class="btn">
+      <button onclick="addTimer()">set timeout</button>
+      <button onclick="clearTimeout()">clearTimeout</button>
+    </div>
+    <script src="libs/moment.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
